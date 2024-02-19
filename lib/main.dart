@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:meals/categories.dart';
 
 final theme = ThemeData(
   colorScheme: ColorScheme.fromSeed(brightness: Brightness.dark,
@@ -18,7 +19,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: theme,
-      home: //...AbsorbPointer,
+      home: const CategroiesScreen(),
     );
   }
 }
