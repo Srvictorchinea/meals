@@ -47,6 +47,20 @@ class MainDrawer extends StatelessWidget {
                   fontSize: 24),
             ),
             onTap: (){},
+          ),
+          ListTile(
+            leading: Icon(
+              Icons.settings,
+              size: 26,
+              color: Theme.of(context).colorScheme.onBackground,
+            ),
+            title: Text(
+              'Filters',
+              style: Theme.of(context).textTheme.titleSmall!.copyWith(
+                  color: Theme.of(context).colorScheme.onBackground,
+                  fontSize: 24),
+            ),
+            onTap: (){},
           )
         ],
       ),
