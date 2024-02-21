@@ -1,10 +1,27 @@
 import 'package:flutter/material.dart';
 
-class MealDetails extends StatelessWidget {
-  const MealDetails({super.key});
+import 'package:meals/models/meal.dart';
+
+class MealDetailsScreen extends StatelessWidget {
+  const MealDetailsScreen({
+    super.key,
+    required this.meal,
+  });
+
+  final Meal meal;
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(meal.title),
+      ),
+      body: Image.network(
+        meal.imageUrl,
+        height: 300,
+        width: double.infinity,
+        fit: BoxFit.cover,
+      ),
+    );
   }
 }
